@@ -3,10 +3,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export const useStyles = makeStyles((theme) => ({
     root: {
-        display: 'flex',
-        alignItems: 'center',
-        alignContent: 'center',
-        justifyContent: 'center',
+        maxWidth: 1150,
+        margin: '150px auto',
+        backgroundColor: '#225a27b8',
+        outline: '1px solid rgba(0, 30, 3, 0.68)',
+        padding: 35,
     },
     headerContainer: {
         backgroundColor: 'cornflowerblue',

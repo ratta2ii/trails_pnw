@@ -5,41 +5,50 @@ import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import useStyles from './HomeStyles';
+import UserLocation from './../../Components/UserLocation/UserLocation';
 
 
 const Home = () => {
+    
 
-
+    //* This activates geolocation in order to get coordinates of a user. These coords will be used to find trails around the user
+    // UserLocation();
     const classes = useStyles();
 
 
     return (
         <Box className={classes.root}>
             <Box className={classes.headerContainer}>
-                <Typography variant="h3">
-                    Hello World! You are now Home.
+                <Typography variant="h3" 
+                    style={{
+                        fontFamily: 'Raleway',
+                        color: '#ffd251',
+                        fontWeight: 400,
+                    }}>
+                    Welcome to <Typography variant='span' 
+                        style={{
+                            fontFamily: 'Raleway',
+                            color: '#ffd251',
+                            textTransform: 'uppercase',
+                            fontWeight: 400,
+                        }}>
+                        PNW Trails 
+                    </Typography>
                 </Typography>
-
-                <Box>
-                    <Link
-                        to='/tools'
-                        className={classes.toolLink} >
-                        Link to tools
-                    </Link>
-                </Box>
-
                 <Box>
                     <Button
                         component={Link}
-                        to='/tools'
+                        to='/trails'
                         variant='contained'
                         color='primary'
-                        fontSize='x-small'
-                        className={classes.button} >
-                        Button To Tools
+                        fontSize='large'
+                        className={classes.button}>
+                        Find Trails Nearby
                     </Button>
                 </Box>
             </Box>
+            {/* //! This component does the geolocation (Not sure of this method of doing this) */}
+            <UserLocation />
         </Box>
     )
 }

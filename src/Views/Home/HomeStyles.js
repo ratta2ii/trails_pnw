@@ -9,7 +9,7 @@ export const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     headerContainer: {
-        backgroundColor: 'cornflowerblue',
+        backgroundColor: '#225a27b8',
         padding: 100,
         marginTop: 200,
         textAlign: 'center',
