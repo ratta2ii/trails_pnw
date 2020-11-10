@@ -28,11 +28,10 @@ const Home = () => {
                     Welcome to <Typography variant='span' 
                         style={{
                             fontFamily: 'Raleway',
-                            color: '#ffd251',
-                            textTransform: 'uppercase',
-                            fontWeight: 400,
+                            color: '#000000',
+                            fontWeight: 800,
                         }}>
-                        PNW Trails 
+                        PNW TRAILS 
                     </Typography>
                 </Typography>
                 <Box>
