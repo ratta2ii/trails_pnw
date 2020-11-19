@@ -31,7 +31,7 @@ const Home = () => {
                             color: '#000000',
                             fontWeight: 800,
                         }}>
-                        PNW TRAILS 
+                        NORTHWEST TRAILS 
                     </Typography>
                 </Typography>
                 <Box>
@@ -42,7 +42,7 @@ const Home = () => {
                         color='primary'
                         fontSize='large'
                         className={classes.button}>
-                        Find Trails Nearby
+                        Find Trails By Location
                     </Button>
                 </Box>
             </Box>
